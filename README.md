@@ -1,21 +1,24 @@
-# Font Awesome 5 Rails
-[![Gem Version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=rb&type=6&v=0.9.0&x2=0)](https://badge.fury.io/rb/font_awesome5_rails)
-[![FA5 version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=5.11.1&x2=0)](https://github.com/tomkra/font_awesome5_rails/blob/master/lib/font_awesome5_rails/version.rb)
-[![Build Status](https://travis-ci.org/tomkra/font_awesome5_rails.svg?branch=master)](https://travis-ci.org/tomkra/font_awesome5_rails)
-[![HitCount](http://hits.dwyl.io/tomkra/tomkra/font_awesome5_rails.svg)](http://hrits.dwyl.io/tomkra/tomkra/font_awesome5_rails)
+# Font Awesome PRO 5 Rails
 
-font_awesome5_rails provides the [Font-Awesome5](https://fontawesome.com/) web fonts, stylesheets and javascripts as a Rails engine for use with the asset pipeline and with backwards compatibility with [font-awesome-rails](https://github.com/bokmann/font-awesome-rails) gem.
+#### *DO NOT USE THIS UNLESS YOU OWN A VALID FONT AWESOME PRO LICENSE!*
 
-This gem provides only Free icons from Font-Awesome.
+[![Gem Version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=rb&type=6&v=1.0.0&x2=0)](https://badge.fury.io/rb/font_awesome_pro5_rails)
+[![FA5 version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=5.12.1&x2=0)](https://github.com/tomkra/font_awesome_pro5_rails/blob/master/lib/font_awesome_pro5_rails/version.rb)
 
-Keep track of changes in [Changelog](https://github.com/tomkra/font_awesome5_rails/blob/master/CHANGELOG.md).
+font_awesome_pro5_rails provides the [Font-Awesome5](https://fontawesome.com/) web fonts, stylesheets and javascripts as a Rails engine for use with the asset pipeline and with backwards compatibility with [font-awesome-rails](https://github.com/bokmann/font-awesome-rails) gem.
+
+This gem provides the **PRO** icons from Font-Awesome.
+
+This gem is a fork of https://github.com/tomkra/font_awesome5_rails created by @tomkra. If you don't have a valid PRO license you need to use the original gem.
+
+Keep track of changes in [Changelog](https://github.com/tomkra/font_awesome_pro5_rails/blob/master/CHANGELOG.md).
 
 ## Table of Contents
 **[Installation](#installation)** <br />
   - **[Install as webfont with CSS](#install-as-webfont-with-css)** <br />  
   - **[Install as SVG with JS](#install-as-SVG-with-JS)** <br />
   - **[Install with webpack](#install-with-webpack)** <br />
-   
+
 **[Usage](#usage)** <br />
   - **[Basic usage](#basic-usage)** <br />
   - **[Solid, Regular, Light, Brand icon types](#solid-regular-light-brand-icon-types)** <br />
@@ -23,7 +26,6 @@ Keep track of changes in [Changelog](https://github.com/tomkra/font_awesome5_rai
   - **[Layered and Stacked icons](#layered-and-stacked-icons)** <br />
 
 **[Use as images](#use-as-images)** <br />
-**[FontAwesome 5 Pro icons](#fontawesome-5-pro-icons)** <br />
 **[Release notes](#release-notes)** <br />
 
 ## Installation
@@ -34,7 +36,7 @@ Check ou the differences in [here](https://fontawesome.com/how-to-use/on-the-web
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'font_awesome5_rails'
+gem 'font_awesome_pro5_rails'
 ```
 
 ### 1. Install as webfont with CSS
@@ -98,7 +100,7 @@ fa_icon(:camera_retro, text: 'Camera', right: true)
 ```
 
 ### Solid, Regular, Light, Brand, Duotone icon types
-In Font Awesome 5 there are several different types of icons. In font_awesome5_rails gem default icon type is ```solid```.
+In Font Awesome 5 there are several different types of icons. In font_awesome_pro5_rails gem default icon type is ```solid```.
 If you want to use different icon style you can do this through ```type``` attribute.
 
 | Style         | type: | type:  |
@@ -242,19 +244,7 @@ More examples can be found in specs.
 
 More animation and data attributes can be found on [FontAwesome documentation](https://fontawesome.com/how-to-use/svg-with-js).
 
-## FontAwesome 5 Pro icons
-Due to licence policy this gem pack only free FA5 icons. However ```fa_icon``` helper support all types of icons. If you purchased FA5 Pro icons and want to use helpers provided by this gem it's possible.
-1. Add this gem to your ```Gemfile``` without including anything to ```application.css``` and ```application.js```.
-2. Create a [Kit](https://fontawesome.com/kits) on Font Awesome.
-3. Add `= javascript_include_tag "//kit.fontawesome.com/[YOUR-KIT-ID].js"` in the head of your layout(s).
-4. You should now be able to use all FA5 Pro icons with helpers provided by this gem.
-
-If you have any questions feel free to create a new issue.
-
-## Release notes
-If you're upgrading from ```0.3.x``` version to ```0.4.x```, you might need to change assets version in ```assets.rb```, due to filename changes.
-
 ## License
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT). However it's a criminal offense to violate the Fontawesome License. Do not use this gem if you don't hold a valid license.
 
 [Font Awesome5 License](https://fontawesome.com/license).

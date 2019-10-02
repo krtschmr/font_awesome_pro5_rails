@@ -19,7 +19,7 @@ require 'byebug'
 require File.expand_path('../dummy/config/application', __FILE__)
 #require './app/helpers/font_awesome/rails/icon_helper'
 
-require 'font_awesome5_rails'
+require 'font_awesome_pro5_rails'
 require 'rspec'
 
 Dummy::Application.initialize!

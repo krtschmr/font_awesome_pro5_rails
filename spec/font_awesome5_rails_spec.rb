@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe FontAwesome5Rails do
+describe FontAwesomePro5Rails do
   include RSpecHtmlMatchers
   include ActionView::Context
 
@@ -23,12 +23,12 @@ describe FontAwesome5Rails do
       expect(File.exists?('./app/assets/stylesheets/font_awesome5.css')).to be_truthy
       expect(File.exists?('./app/assets/stylesheets/all.scss')).to be_truthy
       expect(File.exists?('./app/assets/stylesheets/font_awesome5_webfont.scss')).to be_truthy
-      expect(File.exists?('./lib/font_awesome5_rails/engine.rb')).to be_truthy
-      expect(File.exists?('./lib/font_awesome5_rails/version.rb')).to be_truthy
-      expect(File.exists?('./lib/font_awesome5_rails/parsers/fa_icon_parser.rb')).to be_truthy
-      expect(File.exists?('./lib/font_awesome5_rails/parsers/fa_layered_icon_parser.rb')).to be_truthy
-      expect(File.exists?('./lib/font_awesome5_rails/parsers/fa_stacked_icon_parser.rb')).to be_truthy
-      expect(File.exists?('./lib/font_awesome5_rails/parsers/parse_methods.rb')).to be_truthy
+      expect(File.exists?('./lib/font_awesome_pro5_rails/engine.rb')).to be_truthy
+      expect(File.exists?('./lib/font_awesome_pro5_rails/version.rb')).to be_truthy
+      expect(File.exists?('./lib/font_awesome_pro5_rails/parsers/fa_icon_parser.rb')).to be_truthy
+      expect(File.exists?('./lib/font_awesome_pro5_rails/parsers/fa_layered_icon_parser.rb')).to be_truthy
+      expect(File.exists?('./lib/font_awesome_pro5_rails/parsers/fa_stacked_icon_parser.rb')).to be_truthy
+      expect(File.exists?('./lib/font_awesome_pro5_rails/parsers/parse_methods.rb')).to be_truthy
     end
   end
 

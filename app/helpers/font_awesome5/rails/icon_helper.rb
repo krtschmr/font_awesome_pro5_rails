@@ -1,6 +1,6 @@
-require "font_awesome5_rails/parsers/fa_icon_parser"
-require "font_awesome5_rails/parsers/fa_layered_icon_parser"
-require "font_awesome5_rails/parsers/fa_stacked_icon_parser"
+require "font_awesome_pro5_rails/parsers/fa_icon_parser"
+require "font_awesome_pro5_rails/parsers/fa_layered_icon_parser"
+require "font_awesome_pro5_rails/parsers/fa_stacked_icon_parser"
 
 module FontAwesome5
   module Rails
